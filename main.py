@@ -11,9 +11,9 @@ from Criterio import Criterio
 
 if __name__ == '__main__':
     ############################Valor de Rivera #######################
-    score_rivera = 0.8841
+    score_rivera = 0.9126
     precios = [125, 125, 137.3]
-    overall = [0.7875, 0.4792, 0.6080]
+    overall = [0.7402, 0.4431, 0.5987]
     valor_rivera = score_rivera * (sum(precios) / sum(overall))
 
     print(valor_rivera)
@@ -96,16 +96,16 @@ if __name__ == '__main__':
     ###########################################################################################################################################################
 
     matrizCriterios3 = [
-        Criterio("¿Como de importante es el liderazgo respecto a la adaptabilidad?",0, 1,3),
-        Criterio("¿Como de importante es el liderazgo respecto al potencial?", 0, 2,6),
-        Criterio("¿Como de importante es el liderazgo respecto a los goles?", 0, 3,9),
-        Criterio("¿Como de importante es el liderazgo respecto a las asistencias?", 0, 4,8),
-        Criterio("¿Como de importante es la adaptabilidad respecto al potencial?", 1, 2,3),
-        Criterio("¿Como de importante es la adaptabilidad respecto a los goles?", 1, 3,6),
-        Criterio("¿Como de importante es la adaptabilidad respecto a las asistencias?", 1, 4,5),
+        Criterio("¿Como de importante es el liderazgo respecto a la adaptabilidad?",0, 1,-3),
+        Criterio("¿Como de importante es el liderazgo respecto al potencial?", 0, 2,-6),
+        Criterio("¿Como de importante es el liderazgo respecto a los goles?", 0, 3,-9),
+        Criterio("¿Como de importante es el liderazgo respecto a las asistencias?", 0, 4,-8),
+        Criterio("¿Como de importante es la adaptabilidad respecto al potencial?", 1, 2,-3),
+        Criterio("¿Como de importante es la adaptabilidad respecto a los goles?", 1, 3,-6),
+        Criterio("¿Como de importante es la adaptabilidad respecto a las asistencias?", 1, 4,-5),
         Criterio("¿Como de importantes es el potencial respecto a los goles?", 2, 3,-3),
         Criterio("¿Como de importantes es el potencial respecto a las asistencias?", 2, 4,-2),
-        Criterio("¿Como de importantes son los goles respecto a las asistencias?", 3, 4,0)
+        Criterio("¿Como de importantes son los goles respecto a las asistencias?", 3, 4,1)
     ]
 
     matrizPotencial = [15,11,10,13]
@@ -117,21 +117,21 @@ if __name__ == '__main__':
     matrizconjunta = [matrizPotencial,matrizGoles,matrizAsist]
 
     matrizLiderazgo = [
-        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto?", 0, 1,5),
-        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto?", 0, 2,5),
-        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto", 0, 3,5),
-        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 1, 2,-1),
-        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 1, 3,-1),
-        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 2, 3,-1)
+        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto?", 0, 1,-5),
+        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto?", 0, 2,-5),
+        Criterio("¿Como de superior es un liderazgo medio respecto a un liderazgo alto", 0, 3,-5),
+        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 1, 2,1),
+        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 1, 3,1),
+        Criterio("¿Como de superior es un liderazgo alto respecto a un liderazgo alto", 2, 3,1)
     ]
 
     matrizAdaptabilidad = [
-        Criterio("¿Como de superior es una adaptabilidad media respecto a una adaptabilidad media?", 0, 1,-1),
-        Criterio("¿Como de superior es una adaptabilidad media respecto a una adaptabilidad alta?", 0, 2,5),
-        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 0, 3,5),
-        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 1, 2,5),
-        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 1, 3,5),
-        Criterio("¿Como de superior es un adaptabilidad alta respecto a una adaptabilidad alta?", 2, 3,-1)
+        Criterio("¿Como de superior es una adaptabilidad media respecto a una adaptabilidad media?", 0, 1,1),
+        Criterio("¿Como de superior es una adaptabilidad media respecto a una adaptabilidad alta?", 0, 2,-5),
+        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 0, 3,-5),
+        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 1, 2,-5),
+        Criterio("¿Como de superior es un adaptabilidad media respecto a una adaptabilidad alta?", 1, 3,-5),
+        Criterio("¿Como de superior es un adaptabilidad alta respecto a una adaptabilidad alta?", 2, 3,1)
     ]
 
     ListaMatrices1 = {"Comparación criterios":matrizCriterios,"Comparación de compradores":matrizCompradores,"Comparación de visibilidad":matrizVisibilidad,"Comparación de competencia":matrizCompetencia,"Comparación de costo":matrizCosto}

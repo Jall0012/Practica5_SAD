@@ -6,9 +6,9 @@ class Criterio:
         self.columna = col
         if val != None:
             if val > 0:
-                self.valoracion = val - 1
+                self.valoracion = -(val - 1)
             else:
-                self.valoracion = val + 1
+                self.valoracion = -(val + 1)
 
     def valorar(self,valor):
         if valor >= -8 and valor <= 8:

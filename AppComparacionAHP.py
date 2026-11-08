@@ -308,8 +308,9 @@ class AppComparacionAHP:
 
             ele.append(pesoEl)
 
-        for i in valnormalizados:
-            ele.append(self.normalizar(i))
+        if self.criteriosNormalizados is not None:
+            for i in valnormalizados:
+                ele.append(self.normalizar(i))
 
         pesosalt = list(zip(*ele))
 
@@ -327,8 +328,9 @@ class AppComparacionAHP:
         for matrices in elementos:
             ele.append(self.metodoaproximacion(matrices))
 
-        for i in valnormalizados:
-            ele.append(self.normalizar(i))
+        if self.criteriosNormalizados is not None:
+            for i in valnormalizados:
+                ele.append(self.normalizar(i))
 
         pesosalt = list(zip(*ele))
 
@@ -346,8 +348,9 @@ class AppComparacionAHP:
         for matrices in elementos:
             ele.append(self.metodoautovalores(matrices))
 
-        for i in valnormalizados:
-            ele.append(self.normalizar(i))
+        if self.criteriosNormalizados is not None:
+            for i in valnormalizados:
+                ele.append(self.normalizar(i))
 
         pesosalt = list(zip(*ele))
 
