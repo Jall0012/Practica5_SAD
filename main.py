@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
     ListaMatrices1 = {"Comparación criterios":matrizCriterios,"Comparación de compradores":matrizCompradores,"Comparación de visibilidad":matrizVisibilidad,"Comparación de competencia":matrizCompetencia,"Comparación de costo":matrizCosto}
     ListaMatrices2 = {"Comparación criterios":matrizCriterios2,"Comparación de programación de tareas":matrizProgramacionTareas,"Comparación de colaboracion":matrizColaboracion,"Comparación de evaluación de riesgos":matrizEvaluacionRiesgos,"Comparación de visualización":matrizVisualizacionGrafica}
-    ListaMatrices3 = {"Comparación NORMALIZADOS":matrizCriterios3,"Comparación de liderazgo":matrizLiderazgo,"Comparación de adaptabilidad":matrizAdaptabilidad}
+    ListaMatrices3 = {"Comparación criterios":matrizCriterios3,"Comparación de liderazgo":matrizLiderazgo,"Comparación de adaptabilidad":matrizAdaptabilidad}
 
     root = tk.Tk()
     app1 = AppComparacionAHP(root, ListaMatrices1)
