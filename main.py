@@ -10,14 +10,6 @@ from Criterio import Criterio
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 if __name__ == '__main__':
-    ############################Valor de Rivera #######################
-    score_rivera = 0.9126
-    precios = [125, 125, 137.3]
-    overall = [0.7402, 0.4431, 0.5987]
-    valor_rivera = score_rivera * (sum(precios) / sum(overall))
-
-    print(valor_rivera)
-
     matrizCriterios = [
         Criterio("¿Como de importantes son la cantidad de compradores respecto a la visibilidad del local?", 0, 1,3),
         Criterio("¿Como de importantes son la cantidad de compradores respecto a la cantidad de competencia?", 0, 2,7),
